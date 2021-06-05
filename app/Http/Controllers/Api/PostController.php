@@ -12,7 +12,7 @@ class PostController extends Controller
 {
     public function index()
     {        
-        $posts = Post::orderBy('created_at','desc')->paginate(5);
+        $posts = Post::orderBy('created_at','desc')->paginate(8);
         return PostResource::collection($posts);
     }
 
@@ -23,7 +23,7 @@ class PostController extends Controller
     }
 
     public function show(Post $post)
-    {
+    {       
         return new PostResource($post);
     }
 
