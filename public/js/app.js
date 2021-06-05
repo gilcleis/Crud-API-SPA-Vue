@@ -63228,7 +63228,7 @@ var render = function() {
       [
         _c("div", { staticClass: "container" }, [
           _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
-            _vm._v("\n                Crud-API\n            ")
+            _vm._v("\n                CrudAPI\n            ")
           ]),
           _vm._v(" "),
           _c(

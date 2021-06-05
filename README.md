@@ -1,4 +1,4 @@
-# Crud_API
+# CrudAPI
 Um projeto muito simples com Laravel e Vue.js como um aplicativo de página única (SPA).
 
 ## Instalação
@@ -10,4 +10,6 @@ Um projeto muito simples com Laravel e Vue.js como um aplicativo de página úni
 - Execute o comando __npm install__ 
 - Execute o comando __npm run dev__ 
 - Pronto, inicie o URL principal
+
+![](./screen.png)
 
