@@ -1,15 +1,60 @@
 # CrudAPI
-Um projeto muito simples com Laravel e Vue.js como um aplicativo de página única (SPA).
 
-## Instalação
-- Clone o repositório com __git clone__
-- edite o arqruivo __.env.example__ para __.env__ e configure as credencias de banco de dados
-- Execute o comando __composer install__
-- Execute o comando __php artisan key:generate__
-- Execute o comando __php artisan migrate --seed__ (contem alguns dados para teste)
-- Execute o comando __npm install__ 
-- Execute o comando __npm run dev__ 
-- Pronto, inicie o URL principal
+
+
+## Sobre <a name = "about"></a>
+
+Projeto de uma API REST em PHP com framework Laravel, que permite criar, ler, atualizar e excluir registros em um banco de dados e um front-end com Vue e Bootstrap.
 
 ![](./screen.png)
+
+## Inicio <a name = "getting_started"></a>
+
+Projeto desenvolvido em PHP v7.3, Laravel v8.5 e Vue v2.6
+
+### Pré-requisito
+
+PHP v7.3, Laravel v8.5 e Vue v2.6, composer v2.0 e node v15.0
+
+### Instalação
+
+- Clone o repositório com __git clone__ executando o comando:
+```
+git clone https://github.com/gilcleis/Crud-API-SPA-Vue.git
+```
+- Acesse o diretorio criado
+- edite o arqruivo __.env.example__ para __.env__ e 
+
+- configure as credencias de banco de dados no arquivo __.env__
+
+- Execute o comando:
+
+```
+composer install
+```
+- Execute o comando:
+
+```
+php artisan key:generate
+```
+- Execute o comando:
+
+```
+php artisan migrate --seed
+```
+- Execute o comando :
+
+```
+npm install
+```
+- Execute o comando :
+
+```
+npm run dev
+```
+
+- Pronto, inicie o URL principal ou:
+```
+php artisan serve
+```
 
