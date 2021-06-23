@@ -10,9 +10,17 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {        
-        $posts = Post::orderBy('created_at','desc')->paginate(8);
+        $sort_field= $request->get('sort_field','created_at');
+        $sort_direction= $request->get('sort_direction','desc');
+        $posts = Post::orderBy($sort_field,$sort_direction)->paginate(8);
+        // if(!empty($request->sort_field)&& $request->sort_direction=='desc' ){
+        //     $posts = Post::orderBy($request->sort_field,'desc')->paginate(8);
+        // }
+        // else {
+        //     $posts = Post::orderBy($request->sort_field,'asc')->paginate(8);
+        // }        
         return PostResource::collection($posts);
     }
 
